@@ -1,0 +1,6 @@
+# Python venv, used to try some scripts during development
+venv
+
+# IDEs
+.idea
+.vscode
