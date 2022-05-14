@@ -55,15 +55,15 @@ As for node operators they can follow the steps below to allow monitoring provid
 
 ### Grafana Dashboards
 
-> Example dashboards from N Space Grafana.
+> Example dashboards from Bᴺ 𝕊pace.
 
-- #### 0L - Experiments
-  ![0L - Experiments](https://i.imgur.com/5mTpz7l.jpg)
-  http://grafana.openlibra.space:3000/d/MCc5xsTnz/0l-experiments?orgId=1&from=now-24h&to=now
+- #### Ol Move
+  ![Ol Move](https://user-images.githubusercontent.com/1257310/168403899-4551bc69-a157-4bd8-a837-72b8e936cc2a.png)
+  http://grafana.openlibra.space:3000/d/0l-move/0l-move
 
-- #### Validator monitoring
-  ![Validator monitoring](https://i.imgur.com/QKi3XCd.jpg)
-  http://grafana.openlibra.space:3000/d/llApF3o7k/validator-monitoring?orgId=1from=now-24h&to=now
+- #### 0L Node
+  ![0L Node](https://user-images.githubusercontent.com/1257310/168404037-b405ffd7-6a5c-477e-8099-d9b74bd33b0e.png)
+  http://grafana.openlibra.space:3000/d/0l-node/0l-node
 
 - #### System Monitoring
   ![System Monitoring](https://i.imgur.com/sJrybQo.png)
@@ -73,7 +73,7 @@ As for node operators they can follow the steps below to allow monitoring provid
 
 ## Monitoring Providers
 
-- #### 1. N Space
+- #### 1. Bᴺ 𝕊pace
 
   ```
   Prometheus
