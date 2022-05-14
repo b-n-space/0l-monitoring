@@ -51,7 +51,7 @@ As for node operators they can follow the steps below to allow monitoring provid
   - `curl http://YOUR-IP:9101/metircs`
   - `curl http://YOUR-IP:9102/metrics`
 
-- Share your host IP and validator ID with the monitoring provider
+- Share your validator account address, host IP(s), and a Discord handle with the monitoring provider
 
 ### Grafana Dashboards
 
@@ -84,7 +84,7 @@ As for node operators they can follow the steps below to allow monitoring provid
   Url      : http://grafana.openlibra.space:3000
   Auth     : `viewer:viewer` (view only)
   ```
-  Discord: `@nour_space#6652`
+  Discord: `@nourspace#6652`
 
 ---
 
@@ -105,25 +105,6 @@ Some tasks and question from the Hackmd document that need to be integrated in t
 https://hackmd.io/9dxv7ZwYS1yOmBVSjSV2wg
 
 ### Questions (old)
-
-- [x] Privacy: Should I use single job for all nodes or keep it this way?
-  ```
-    - job_name: '0l-node-VAL_ID-XXXX'
-      static_configs:
-      - targets: [
-        'a.b.y.x:9100',
-        'a.b.y.x:9101',
-        'a.b.y.x:9102'
-      ]
-  ```
-  > The above makes it easier to know whose node is offline during development
-
-  :star: Will use a random acronym that we agree on once you share your IP :star:
-
-- [ ] Tech:
-  Might want to log some more metrics like release version, network (fullnode, validator, vfn)
-  For these we can either build our own http server that provides these by collecting from other services and only
-  export its port, or directly adding metrics to the diem code which exposes metrics on 9101/9102
 
 - [ ] Security:
   We want to create our own node-exporter config to only send meaningful and safe system metrics.
