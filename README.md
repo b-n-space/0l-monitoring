@@ -77,11 +77,10 @@ As for node operators they can follow the steps below to allow monitoring provid
 
   ```
   Prometheus
-  Url      : http://prometheus.openlibra.space:9090
-  Static IP: 206.189.251.112
+  Static IP: 85.215.101.127
   
   Grafana
-  Url      : http://grafana.openlibra.space:3000
+  Url      : https://grafana.openlibra.space
   Auth     : `viewer:viewer` (view only)
   ```
   Discord: `@nourspace#6652`
@@ -91,8 +90,8 @@ As for node operators they can follow the steps below to allow monitoring provid
 ## Todo
 
 - [ ] Add specific todos for Prometheus and Grafana setup guides
-- [ ] Consider using K8s operators and/or Helm charts to run Prometheus stack
-  - [ ] Use HTTPs and load balancers
+- [x] Consider using K8s operators and/or Helm charts to run Prometheus stack
+  - [x] Use HTTPs and load balancers
 - [ ] Link to and/or integrate other monitoring tools built by the 0L community
   - [ ] Enable alerting on Grafana dashboards
 
@@ -136,5 +135,5 @@ https://hackmd.io/9dxv7ZwYS1yOmBVSjSV2wg
 - [ ] Parse JSON metrics from port `6191`
   http://35.184.98.21:6191/metrics
   > Might help: https://stackoverflow.com/questions/55959877/convert-json-object-to-prometheus-metrics-format-using-jq/55959932#55959932
-- [ ] Use port 80 for Grafana Both should be faced with some load balancer
-- [ ] Move everything to a proper setup on K8s URLs, SSL, access, backups, ...
+- [x] Use port 80 for Grafana Both should be faced with some load balancer
+- [x] Move everything to a proper setup on K8s URLs, SSL, access, backups, ...
