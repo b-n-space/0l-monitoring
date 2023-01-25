@@ -35,7 +35,7 @@ As for node operators they can follow the steps below to allow monitoring provid
 
 - Pick your [monitoring provider](#monitoring-providers) from the list below
 
-- Open ports `9100-9102` to `$PROMETHEUS_STATIC_IP` (and probably to your own IP as well)
+- Open ports `9100-9101` to `$PROMETHEUS_STATIC_IP` (and probably to your own IP as well)
   > Depending on your host and firewall, you might need to enable that on different places; `ufw`, Digital Ocean Firewall, AWS Security Groups, etc.
 
 - Install [Node Exporter](https://prometheus.io/docs/guides/node-exporter/)
@@ -49,7 +49,6 @@ As for node operators they can follow the steps below to allow monitoring provid
 - Confirm these endpoints are working
   - `curl http://YOUR-IP:9100/metrics`
   - `curl http://YOUR-IP:9101/metircs`
-  - `curl http://YOUR-IP:9102/metrics`
 
 - Share your validator account address, host IP(s), and a Discord handle with the monitoring provider
 
